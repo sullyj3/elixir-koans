@@ -4,19 +4,19 @@ defmodule Tuples do
   @intro "Tuples"
 
   koan "Tuples can contain different things" do
-    assert {:a, 1, "hi"} == ___
+    assert {:a, 1, "hi"} == {:a, 1, "hi"}
   end
 
   koan "Tuples have a size" do
-    assert tuple_size({:a, :b, :c}) == ___
+    assert tuple_size({:a, :b, :c}) == 3
   end
 
   koan "You can pull out individual elements" do
-    assert elem({:a, "hi"}, 1) == ___
+    assert elem({:a, "hi"}, 1) == "hi"
   end
 
   koan "You can change individual elements of a tuple" do
-    assert put_elem({:a, "hi"}, 1, "bye") == ___
+    assert put_elem({:a, "hi"}, 1, "bye") == {:a, "bye"}
   end
 
   koan "You can also simply extend a tuple with new stuff" do
